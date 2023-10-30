@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  Default
+  Default/DESKTOP-NERKKU0
 
 steps:
 - task: Maven@3
