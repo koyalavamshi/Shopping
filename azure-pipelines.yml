@@ -36,8 +36,7 @@
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
   
-
-steps:
+- steps:
 - task: Maven@3
   inputs:
     mavenPomFile:'pom.xml'
