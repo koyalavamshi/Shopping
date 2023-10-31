@@ -20,8 +20,8 @@ Default
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile:'BreadcrumbsShopping
-/pom.xml'
+    mavenPomFile:'pom.xml'
+
 
 
     mavenOptions: '-Xmx3072m'
