@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 
 import static jdk.javadoc.doclet.Reporter.*;
-import static utility.Log4j.Log;
+
 
 public class ShippingMethod {
     public WebDriver driver;
@@ -25,8 +25,7 @@ public class ShippingMethod {
     private By co = By.xpath("//button[@class='button-1 payment-info-next-step-button']");
     private By confirm = By.xpath("//button[normalize-space()='Confirm']");
     private By text = By.xpath("//strong[normalize-space()='Your order has been successfully processed!']");
-
-
+    private By orderNo = By.cssSelector("div[class='order-number'] strong");
 
     public void clickongroundbtn(){
         driver.findElement(groundbtn).click();
@@ -50,7 +49,13 @@ public class ShippingMethod {
 
        WebElement txt =  driver.findElement(text);
        System.out.println(txt.getText());
-       driver.quit();
+
+    }
+    public void orderID(){
+        WebElement id = driver.findElement(orderNo);
+        System.out.println(id.getText());
+        driver.quit();
+
     }
 
 }

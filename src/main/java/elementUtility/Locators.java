@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-import static utility.Log4j.Log;
 
 public class Locators {
     public WebDriver driver;

@@ -101,6 +101,9 @@ public class Desktop extends Main {
         shippingMethod.clickonconfirmbtn();
         Thread.sleep(3000);
         shippingMethod.verifytext();
+        Thread.sleep(3000);
+        shippingMethod.orderID();
+
     }
 
 

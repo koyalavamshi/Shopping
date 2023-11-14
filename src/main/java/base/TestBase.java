@@ -1,5 +1,6 @@
 package base;
 
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
@@ -12,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     public static WebDriver driver;
     public static Properties prop;
+    public static Scenario scenario;
 
     public WebDriver webDriverManager() throws IOException {
         prop = new Properties();
